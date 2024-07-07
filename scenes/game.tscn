@@ -438,6 +438,21 @@ sources/0 = SubResource("TileSetAtlasSource_bcu1s")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wcr8v"]
 
+[sub_resource type="Animation" id="Animation_gnvlu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(431, 49)]
+}
+
 [sub_resource type="Animation" id="Animation_dj2g6"]
 resource_name = "move"
 length = 1.5
@@ -453,21 +468,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(431, 49), Vector2(527, 49)]
-}
-
-[sub_resource type="Animation" id="Animation_gnvlu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(431, 49)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0ew8c"]
